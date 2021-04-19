@@ -1,0 +1,21 @@
+form {
+    text-align: center;
+}
+
+form .city-name {
+  border: 1px solid rgb(177, 173, 173);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgb(218, 214, 214);
+  outline: none;
+  padding: 3px;
+  font-size: 13px;
+}
+
+form .search-btn {
+  background-color: blue;
+  color: #eeeeee;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 13px;
+}
