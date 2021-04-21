@@ -14,7 +14,7 @@ export default function CityDisplay(props) {
             <IconDisplay image={props.data.icon} />
             <div className="row justify-content-md-center">
                 <HumidityInfo humidity={props.data.humidity} />
-                <Temperature displayTemperature={props.data.temperature} />
+                <Temperature displayCelsius={props.data.temperature} />
                 <WindSpeed wind={props.data.wind} />
             </div>
             <hr />
