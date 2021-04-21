@@ -35,7 +35,7 @@ export default function Temperature(props) {
     } else {
          
         return (
-            <div>
+            <div className="col-md-3 text-center" style={{ marginTop: -11 }}>
                 <span style={{ fontSize: 43, opacity: .7, fontWeight: 650 }}>{Math.round(fahrenheit())}</span>
                 <span style={{ 
                     position: "relative", 
