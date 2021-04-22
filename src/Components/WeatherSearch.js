@@ -8,7 +8,7 @@ export default function WeatherSearch(props) {
     const [city, setCity] = useState(props.defaultCity);
 
     function handleSearch(response) {
-        // console.log(response.data);
+        console.log(response.data);
         setWeatherData({
             ready: true,
             coordinates: response.data.coord,
@@ -18,8 +18,6 @@ export default function WeatherSearch(props) {
             description: response.data.weather[0].description,
             icon: response.data.weather[0].icon,
             humidity: response.data.main.humidity
-            // minTemperature: response.data.main.temp_min,
-            // maxTemperature: response.data.main.temp_max
         });
     }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Forecast.css";
-import IconDisplay from "./IconDisplay";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 
 export default function Forecast(props) {
@@ -15,29 +15,13 @@ export default function Forecast(props) {
         setLoaded(true);
     }
 
-    function maxTemperature() {
-        let temperature = Math.round(forecastInfo[0].temp.max);
-        return temperature;
-    }
-
-    function minTemperature() {
-        let temperature = Math.round(forecastInfo[0].temp.min);
-        return temperature;
-    }
-
     if (loaded) {
         return (
             <div className="row">
                 <div className="col">
                     <div className="card">
                         <div className="card-body">
-                            <p className="forecast-Day">{forecastInfo[0].dt}</p>
-                            <IconDisplay image="01d" size={60} />
-                        
-                            <p className="forecast-Temperature">
-                                <span className="high-Temperature">{maxTemperature()}°</span>
-                                <span className="low-Temperature">| {minTemperature()}°</span>
-                            </p>
+                        <WeatherForecastDay data={forecastInfo[1]} />
                         </div>
                     </div>
                 </div>
