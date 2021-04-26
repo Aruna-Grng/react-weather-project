@@ -42,8 +42,8 @@ export default function WeatherSearch(props) {
                     className="city-name" 
                     style={{ backgroundColor: '#eeeeee' }} 
                     type="search" 
-                    placeholder="Enter city name..."
                     autoFocus="on"
+                    placeholder="Enter city name..."
                     onChange={handleCityChange} /> {""}
 
                     <input 
