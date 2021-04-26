@@ -5,6 +5,7 @@ import Temperature from "./Temperature";
 import WindSpeed from "./WindSpeed";
 import IconDisplay from "./IconDisplay";
 import Forecast from "./Forecast";
+import Time from "./Time";
 
 
 export default function CityDisplay(props) {
@@ -12,6 +13,7 @@ export default function CityDisplay(props) {
         <div>
             <h1 className="city">{props.data.city}</h1>
             <h2 className="text-capitalize">{props.data.description}</h2>
+            <Time />
             <IconDisplay image={props.data.icon} size={200} />
             <div className="row justify-content-md-center">
                 <HumidityInfo humidity={props.data.humidity} />
